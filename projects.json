@@ -1,0 +1,114 @@
+[
+    {
+      "name": "RoboMeds: Pharmacy Automation Using Image Processing Technology",
+      "images": [
+        "images/RoboMeds/1.png",
+        "images/RoboMeds/3.jpg",
+        "images/RoboMeds/4.jpg",
+        "images/RoboMeds/5.jpg",
+        "images/RoboMeds/6.jpg"
+      ],
+      "video": "images/RoboMeds/Demo_video.mp4",
+      "skills": ["Image Processing", "Embedded Systems", "Flutter", "Cloud, Robotics"],
+      "description": [
+        "Funded by SSN College Innovation Cell.",
+        "Engineered an intelligent robotic system to retrieve and dispense medicines in pharmacies.",
+        "Devised the use of QR codes to uniquely identify the medicine, implemented grid localization algorithms to find its location, and assembled a linear rail robotic arm to collect it.",
+        "Created a user-friendly mobile app to manage the medicine retrieval process."
+      ],
+      "presentationLink":
+        "https://drive.google.com/file/d/1_ZAn9YCQjzMAHoQI6NCaEYG9p7RA3xOA/view?usp=sharing",
+      "demoLink":
+        "https://drive.google.com/file/d/1_rmyaqL0FzB9PUCgwd_Nkrkuj83DZngD/view"
+    },
+    {
+      "name": "Vihara – Temple Ticketing System",
+      "images": [
+        "images/Vihara/1.jpg",
+        "images/Vihara/2.jpg",
+        "images/Vihara/3.jpeg",
+        "images/Vihara/4.jpeg",
+        "images/Vihara/5.jpeg",
+        "images/Vihara/6.jpeg",
+        "images/Vihara/7.jpeg",
+        "images/Vihara/8.jpg",
+        "images/Vihara/9.jpg",
+        "images/Vihara/10.jpg",
+        "images/Vihara/11.jpg",
+        "images/Vihara/12.jpg"
+      ],
+      "video": "images/Vihara/Demo_video.mp4",
+      "skills": ["React Native", "Encryption", "Firebase", "LLMs", "Python Flask"],
+      "description": [
+        "Built an integrated application system to streamline temple crowds: a mobile app for users to book entry slots and temple workers to scan tickets, and a web app for admin to control slot schedules and alerts.",
+        "Fine-tuned Gemini LLM to create a chatbot to assist visitors with temple information, nearby tourist attractions and itinerary planning.",
+        "Implemented AES-encrypted QR code tickets to prevent ticket duplication and ensure secure verification.",
+        "Designed real-time visitor monitoring to update live visitor counts and estimated queue time."
+      ],
+      "presentationLink":
+        "https://drive.google.com/file/d/1G4JHOkvoTxK7S3XIS9WXTjtTQSv48MiE/view?usp=sharing",
+      "demoLink":
+        "https://drive.google.com/file/d/1vOgsztELgi95fgI9CIbV6nxhOQ6TTS3f/view?usp=sharing"
+    },
+    {
+      "name": "Newsphere: Personalized News Aggregator",
+      "images": [
+        "images/Newsphere/1.jpg",
+        "images/Newsphere/2.jpg",
+        "images/Newsphere/4.jpg",
+        "images/Newsphere/5.jpg",
+        "images/Newsphere/6.jpg",
+        "images/Newsphere/7.jpg",
+        "images/Newsphere/8.jpg",
+        "images/Newsphere/9.jpg",
+        "images/Newsphere/10.jpg",
+        "images/Newsphere/11.jpg",
+        "images/Newsphere/12.jpg"
+      ],
+      "video": "images/Newsphere/Demo_video.mp4",
+      "skills": ["React Native", "ML Recommendation Systems", "NLP", "ETL", "Python Flask"],
+      "description": [
+        "Built a mobile app to learn user’s interests and curate relevant news articles in various Indian languages.",
+        "Learned and applied content-based and collaborative filtering methods to recommend articles based on user behavior on the app.",
+        "Performed Extract, Transform, Load (ETL) processes to fetch articles with News APIs, transform them into embeddings using NLP techniques."
+      ],
+      "presentationLink":
+        "https://drive.google.com/file/d/1qOKaQC6uuWFJscMihcw656RpwVamkAIb/view?usp=sharing",
+      "demoLink":
+        "https://drive.google.com/file/d/1DwBi7Jj8hilR1UsqBtF4sK09hA088Sq4/view?usp=sharing"
+    },
+    {
+      "name": "EduVR: A Virtual Reality Tool for Intuitive Statistical Education on Machine Learning Algorithms",
+      "images": ["images/EduVR/1.png", "images/EduVR/2.png"],
+      "video": "images/EduVR/Demo_video.mp4",
+      "skills": ["Unity", "C#", "Machine Learning", "VR Development"],
+      "description": [
+        "Co-authored a research paper, presented at the conference and selected for publication in Springer Nature.",
+        "Identified that existing Virtual Reality (VR) tools capture only the end result of different Machine Learning algorithms fed with static input data.",
+        "Pursued courses on Unity and C# to build a VR tool that enables users to input datasets, select fields to visualize, simulate and interact with the 3D visualization generated through each step of the algorithm.",
+        "Utilized this tool to interactively teach students in ML workshops at the IT Department Coding Club."
+      ],
+      "presentationLink": "https://example.com/robomeds-presentation",
+      "demoLink": "https://example.com/robomeds-demo"
+    },
+    {
+      "name": "NutriChef: Personalized Meal-Planner",
+      "images": [
+        "images/NutriChef/1.png",
+        "images/NutriChef/2.png",
+        "images/NutriChef/4.png",
+        "images/NutriChef/5.png",
+        "images/NutriChef/6.png",
+        "images/NutriChef/7.png"
+      ],
+      "video": "images/NutriChef/Demo_video.mp4",
+      "skills": ["Python Flask", "HTML", "CSS", "Algorithms"],
+      "description": [
+        "Created a recipe recommendation system based on dietary preferences.",
+        "Used Kansackapproach to suggest meal plans considering calorie, protein, fat and carb requirement.",
+        "Built a user-friendly interface for easy recipe search."
+      ],
+      "presentationLink": "https://example.com/robomeds-presentation",
+     "demoLink": "https://example.com/robomeds-demo"
+    }
+  ]

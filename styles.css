@@ -1,0 +1,118 @@
+/* Limit carousel height for a phone-like aspect ratio without changing section width */
+.project-section .carousel {
+  max-width: 100%; /* Allow carousel to use available width */
+  height: 500px; /* Set desired height to simulate phone display height */
+  overflow: hidden;
+}
+
+/* CSS to style social media icons */
+.social-icon {
+  width: 32px; /* Set a uniform width */
+  height: 32px; /* Set a uniform height */
+  object-fit: contain; /* Ensure the entire image fits within the container */
+}
+
+/* Ensure all images and videos fit within the carousel uniformly */
+.project-section .carousel .carousel-inner .carousel-item img,
+.project-section .carousel .carousel-inner .carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the entire image is visible within the fixed dimensions */
+  max-height: 500px; /* Set a max-height so all items in the carousel maintain a consistent height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure carousel item fills the entire height */
+}
+/* Ensure all images and videos fit within the carousel uniformly */
+.project-section .carousel .carousel-inner .carousel-item img,
+.project-section .carousel .carousel-inner .carousel-item video {
+  width: 100%;
+  max-height: 500px; /* Ensure all items have a consistent height */
+  object-fit: contain; /* Ensure the entire video or image is visible within the container */
+  display: block; /* Ensures the media is centered within the carousel */
+  margin: auto; /* Center the video horizontally */
+}
+
+/* Reset any changes to the section itself */
+.project-section {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style and position the carousel control buttons */
+.project-section .carousel-control-prev,
+.project-section .carousel-control-next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  z-index: 1; /* Ensure buttons appear above carousel items */
+}
+
+/* Ensure the control icons are visible and centered */
+.project-section .carousel-control-prev-icon,
+.project-section .carousel-control-next-icon {
+  background-image: none; /* Remove default Bootstrap icons */
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  padding: 5px;
+}
+
+/* Custom arrow styling */
+.project-section .carousel-control-prev-icon {
+  transform: rotate(135deg); /* Rotate for left arrow */
+}
+
+.project-section .carousel-control-next-icon {
+  transform: rotate(-45deg); /* Rotate for right arrow */
+}
+
+/* Hover effect for buttons */
+.project-section .carousel-control-prev:hover,
+.project-section .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+/* Position the control buttons on the left and right */
+.project-section .carousel-control-prev {
+  left: 10px; /* Distance from the left edge */
+}
+
+.project-section .carousel-control-next {
+  right: 10px; /* Distance from the right edge */
+}
+
+/* Ensure the carousel itself has adequate width for the controls */
+.project-section .carousel {
+  position: relative;
+  max-width: 100%;
+  height: 500px; /* Maintain desired height */
+  overflow: hidden;
+}
+
+/* Force all carousel indicators to be dark */
+.carousel-indicators button {
+  background-color: black !important; /* Override Bootstrap's default color */
+  opacity: 0.5 !important; /* Slightly transparent for non-active indicators */
+  border: none; /* Remove any border if present */
+}
+
+.carousel-indicators .active {
+  background-color: black !important; /* Ensure active indicator is fully black */
+  opacity: 1 !important; /* Fully opaque for the active indicator */
+}
