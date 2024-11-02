@@ -122,6 +122,7 @@
   flex-direction: column;
   align-content: space-around;
   justify-content: center;
+  margin: 15px;
 }
 
 /* Custom styling for navbar */
