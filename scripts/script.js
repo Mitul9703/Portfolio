@@ -38,11 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const carouselItem = document.createElement("div");
         carouselItem.className = `carousel-item ${index === 0 ? "active" : ""}`;
+        const carouselInnerItem = document.createElement("div");
+        carouselInnerItem.className = `d-flex justify-content-center`;
         const img = document.createElement("img");
         img.src = image;
-        img.className = "d-block w-100";
+        img.className = "d-block w-100 align-middle";
         img.alt = `Image ${index + 1} for ${project.name}`;
-        carouselItem.appendChild(img);
+        carouselInnerItem.appendChild(img);
+        carouselItem.appendChild(carouselInnerItem);
         carouselInner.appendChild(carouselItem);
       });
 
@@ -65,7 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
         video.loop = true;
         video.playsInline = true;
 
-        videoItem.appendChild(video);
+        const carouselInnerItem = document.createElement("div");
+        carouselInnerItem.className = `d-flex justify-content-center`;
+        carouselInnerItem.appendChild(video);
+        videoItem.appendChild(carouselInnerItem);
         carouselInner.appendChild(videoItem);
       }
 
@@ -157,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Fetch data from JSON and generate sections
-  fetch("projects.json")
+  fetch("./data/projects.json")
     .then((response) => response.json())
     .then((projects) => createProjectSections(projects))
     .catch((error) => console.error("Error loading projects:", error));

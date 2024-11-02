@@ -1,0 +1,23 @@
+[
+  {
+    "title": "EduVR: A Virtual Reality Tool for Intuitive Statistical Education on Machine Learning Algorithms",
+    "conference": "9th International Conference on ICT for Sustainable Development (ICT4SD),  Goa, India",
+
+    "description": [
+      "Co-authored a research paper, presented at the conference and selected for publication in Springer Nature.",
+      "Identified that existing Virtual Reality (VR) tools capture only the end result of different Machine Learning algorithms fed with static input data.",
+      "Pursued courses on Unity and C# to build a VR tool that enables users to input datasets, select fields to visualize, simulate and interact with the 3D visualization generated through each step of the algorithm.",
+      "Utilized this tool to interactively teach students in ML workshops at the IT Department Coding Club."
+    ]
+  },
+  {
+    "title": "AI-Driven Summarization of Academic Literature using Transformer Model",
+    "conference": "2nd International Conference on Inventive Computing and Informatics (ICICI), India ",
+
+    "description": [
+      "Co-authored a research paper, presented at the conference, and selected for publication in IEEE Xplore.",
+      "Identified through literature review that ML generated summaries of academic papers omit key details.",
+      "Researched a combination of NLP techniques and Transformers to extract key details and summarize papers."
+    ]
+  }
+]

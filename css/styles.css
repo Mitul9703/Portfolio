@@ -117,6 +117,13 @@
   opacity: 1 !important; /* Fully opaque for the active indicator */
 }
 
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+}
+
 /* Custom styling for navbar */
 .navbar {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

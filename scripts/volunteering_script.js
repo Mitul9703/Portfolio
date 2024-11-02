@@ -1,33 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-  function createPublicationSections(publications) {
-    const container = document.querySelector(".publications-container");
+  function createVolunteeringSections(volunteerings) {
+    const container = document.querySelector(".volunteering-container");
 
-    publications.forEach((publication) => {
+    volunteerings.forEach((volunteering) => {
       const section = document.createElement("section");
       section.className =
-        "publication-section d-flex flex-lg-row flex-column align-items-center mb-5";
+        "volunteering-section d-flex flex-lg-row flex-column align-items-center mb-5";
 
       // Left side: Title and Conference/Journal
       const leftSide = document.createElement("div");
       leftSide.className = "col-lg-6 p-4";
 
       const title = document.createElement("h2");
-      title.className = "publication-title";
-      title.innerText = publication.title;
+      title.className = "volunteering-title";
+      title.innerText = volunteering.title;
 
-      const conference = document.createElement("p");
-      conference.className = "text-muted fst-italic";
-      conference.innerText = publication.conference;
+      const organisation = document.createElement("p");
+      organisation.className = "text-muted fst-italic";
+      organisation.innerText = volunteering.organisation;
+
+      const date = document.createElement("p");
+      date.className = "text-muted fst-italic";
+      date.innerText = volunteering.date;
 
       leftSide.appendChild(title);
-      leftSide.appendChild(conference);
+      leftSide.appendChild(organisation);
+      leftSide.appendChild(date);
 
       // Right side: Description
       const rightSide = document.createElement("div");
       rightSide.className = "col-lg-6 p-4";
 
       const descriptionList = document.createElement("ul");
-      publication.description.forEach((point) => {
+      volunteering.description.forEach((point) => {
         const pointItem = document.createElement("li");
         pointItem.innerText = point;
         descriptionList.appendChild(pointItem);
@@ -45,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Fetch data from JSON and generate sections
-  fetch("publications.json")
+  fetch("./data/volunteering.json")
     .then((response) => response.json())
-    .then((publications) => createPublicationSections(publications))
-    .catch((error) => console.error("Error loading publications:", error));
+    .then((volunteerings) => createVolunteeringSections(volunteerings))
+    .catch((error) => console.error("Error loading volunteerings:", error));
 });
