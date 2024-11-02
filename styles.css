@@ -116,3 +116,17 @@
   background-color: black !important; /* Ensure active indicator is fully black */
   opacity: 1 !important; /* Fully opaque for the active indicator */
 }
+
+/* Custom styling for navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff !important; /* Highlight the active page */
+}
